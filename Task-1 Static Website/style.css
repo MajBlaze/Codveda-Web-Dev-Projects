@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  background-color: #fff8ec;
+  width: 100%;
+  min-height: 100vh;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #546b41;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #f3d5b5;
+  text-decoration: underline;
+}
+.logo {
+  font-size: 30px;
+}
+.hero {
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(https://static.vecteezy.com/system/resources/thumbnails/003/141/266/small/fresh-baked-brown-bread-on-a-brown-wooden-background-photo.JPG);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 150px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+.button {
+  background-color: #99ad7a;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #546b41;
+}
+.section {
+  background-color: #dcccac;
+  padding: 50px 20px;
+  text-align: center;
+}
+.section-head {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: white;
+  width: 280px;
+  margin: 15px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.item h3 {
+  color: #7a3e12;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+.item p {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #5f4030;
+}
+.footer {
+  background-color: #546b41;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.page-title {
+  text-align: center;
+  padding: 55px 20px;
+  background-color: #f3d5b5;
+}
+
+.page-title h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #5c3317;
+}
+
+.page-title p {
+  font-size: 18px;
+}
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.about img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  color: #7a3e12;
+  font-size: 32px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5f4030;
+}
+.contact {
+  width: 80%;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.contact h2 {
+  color: #7a3e12;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.contact p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 9px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #d2691e;
+}
+
+form textarea {
+  height: 130px;
+}
+
+button {
+  background-color: #99ad7a;
+  color: white;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #546b41;
+}
