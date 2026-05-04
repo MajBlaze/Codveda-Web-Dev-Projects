@@ -229,3 +229,25 @@ button {
 button:hover {
   background-color: #546b41;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 32px;
+  }
+}
