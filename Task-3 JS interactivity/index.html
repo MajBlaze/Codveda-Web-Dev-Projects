@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactions</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <main class="page">
+      <h1>JavaScript Interactivity Practice</h1>
+      <p class="subtitle">Testing click, form, dropdown, and modal events.</p>
+
+      <section class="center">
+        <button id="clickMe" type="button">Click Me</button>
+      </section>
+
+      <form id="myForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="e.g. Aisha">
+        <button type="submit">Submit</button>
+      </form>
+
+      <section class="dropdown">
+        <button id="dropdownBtn" type="button">Toggle Options</button>
+        <div id="dropdownContent" class="dropdown-content" aria-hidden="true">
+          <p>View profile</p>
+          <p>Account settings</p>
+          <p>Sign out</p>
+        </div>
+      </section>
+
+      <section class="center">
+        <button id="openModal" type="button">Open Modal</button>
+      </section>
+    </main>
+
+    <div id="modal" aria-hidden="true">
+      <div id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">Modal Popup</h2>
+        <p>This is a modal popup example.</p>
+        <button id="closeModal" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
