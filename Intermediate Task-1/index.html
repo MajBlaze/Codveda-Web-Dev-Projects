@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Club Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-wrap">
+            <h1 class="logo">Campus Club</h1>
+            <button id="menuBtn" class="menu-btn">Menu</button>
+            <nav id="nav" class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#activities">Activities</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-text">
+                <h2>Welcome to Our Student Club</h2>
+                <p>We run simple, fun, and practical sessions for students who want to build confidence, communication, and teamwork.</p>
+                <div class="palette-wrap">
+                    <p>Choose Theme:</p>
+                    <div class="palette-buttons">
+                        <button class="palette-btn active" data-theme="default">Ocean</button>
+                        <button class="palette-btn" data-theme="sunset">Sunset</button>
+                        <button class="palette-btn" data-theme="mint">Mint</button>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button id="welcomeBtn" class="btn">Show Welcome Note</button>
+                    <a href="#activities" class="btn btn-outline">Explore Activities</a>
+                </div>
+                <p id="welcomeText" class="message"></p>
+            </div>
+            <div class="hero-box">
+                <h3>Why Join?</h3>
+                <ul>
+                    <li>Beginner-friendly environment</li>
+                    <li>Weekly learning activities</li>
+                    <li>Peer support and practice</li>
+                    <li>Better confidence for placements</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <h2>About the Club</h2>
+            <p>Campus Club is a student-led community where members learn by doing. Every week, we host short sessions focused on practical growth, not theory overload.</p>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>180+</h3>
+                    <p>Active members</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24</h3>
+                    <p>Sessions this semester</p>
+                </div>
+                <div class="stat-card">
+                    <h3>12</h3>
+                    <p>Student mentors</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="section container">
+            <div class="section-top">
+                <h2>Club Activities</h2>
+                <div class="top-actions">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Activities</option>
+                        <option value="learning">Learning</option>
+                        <option value="career">Career</option>
+                        <option value="fun">Fun</option>
+                    </select>
+                    <button id="toggleActivities" class="btn btn-dark">Show More</button>
+                </div>
+            </div>
+            <div id="activityGrid" class="activity-grid">
+                <article class="card" data-cat="learning">
+                    <h3>Public Speaking</h3>
+                    <p>Students practice speaking in front of the group.</p>
+                </article>
+                <article class="card" data-cat="learning">
+                    <h3>Mini Hackathon</h3>
+                    <p>Small teams solve beginner-friendly coding tasks.</p>
+                </article>
+                <article class="card" data-cat="fun">
+                    <h3>Quiz Night</h3>
+                    <p>A fun quiz session about technology and current topics.</p>
+                </article>
+                <article class="card extra hidden-card" data-cat="career">
+                    <h3>Resume Review</h3>
+                    <p>Seniors help juniors improve their resumes.</p>
+                </article>
+                <article class="card extra hidden-card" data-cat="learning">
+                    <h3>Project Showcase</h3>
+                    <p>Members present small web and app projects.</p>
+                </article>
+                <article class="card extra hidden-card" data-cat="career">
+                    <h3>Interview Practice</h3>
+                    <p>Peer-to-peer mock interviews for placement preparation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="events" class="section container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <p class="tag">Saturday</p>
+                    <h3>Group Discussion Drill</h3>
+                    <p>10:30 AM to 12:00 PM</p>
+                </article>
+                <article class="event-card">
+                    <p class="tag">Tuesday</p>
+                    <h3>Frontend Basics Jam</h3>
+                    <p>4:00 PM to 5:30 PM</p>
+                </article>
+                <article class="event-card">
+                    <p class="tag">Friday</p>
+                    <h3>Mock Interview Circle</h3>
+                    <p>3:00 PM to 4:30 PM</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <p id="formMsg" class="message"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-wrap">
+            <p>Campus Club Website</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
