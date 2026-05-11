@@ -26,11 +26,11 @@ I made these projects level by level based on the official task list PDF and use
 |---|---|---|
 | Level 1 | Basic Task - 1 (Static/Bakery Website) | `Basic Task - 1 (Bakery Website)/` |
 | Level 1 | Basic Task - 2 (Portfolio) | `Basic Task - 2 (Portfolio)/` |
-| Level 1 | Basic Task - 3 (JavaScript Interactivity) | `Basic Task - 3 (JavaScript Interactivity)/` |
-| Level 2 | Intermediate Task - 1 (Responsive Web Design) | `Intermediate Task - 1 (Responsive Web Design)/` |
+| Level 1 | Basic Task - 3 (Interactive UI Elements) | `Basic Task - 3 (Interactive UI Elements)/` |
+| Level 2 | Intermediate Task - 1 (Campus Club Responsive Website) | `Intermediate Task - 1 (Campus Club Responsive Website)/` |
 | Level 2 | Intermediate Task - 2 (To-Do App with Local Storage) | `Intermediate Task - 2 (To-Do List App)/` |
 | Level 2 | Intermediate Task - 3 (React/Vue Basics) | `Intermediate Task - 3 (React Calculator)/` |
-| Level 3 | Advanced Task - 1 (Full-Stack CRUD App) | `Advanced Task - 1 (Full-Stack CRUD)/` |
+| Level 3 | Advanced Task - 1 (Student Assignment Tracker) | `Advanced Task - 1 (Student Assignment Tracker)/` |
 | Level 3 | Advanced Task - 2 (Authentication System) | `Advanced Task - 2 (User Authentication)/` |
 
 ## Tech Stack Used

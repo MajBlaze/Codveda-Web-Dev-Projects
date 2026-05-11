@@ -23,7 +23,7 @@ A simple and practical full-stack app to manage student assignments in one place
 ## Project Structure
 
 ```text
-Advanced Task - 1 (Full-Stack CRUD)/
+Advanced Task - 1 (Student Assignment Tracker)/
   backend/
   frontend/
 ```
