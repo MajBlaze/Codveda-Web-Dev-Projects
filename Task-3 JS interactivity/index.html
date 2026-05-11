@@ -3,49 +3,169 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Interactions</title>
+    <title>Level 2 Task 1 | Responsive Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    >
   </head>
   <body>
-    <main class="page">
-      <h1>JavaScript Interactivity Practice</h1>
-      <p class="subtitle">Testing click, form, dropdown, and modal events.</p>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="#home">Northlane Studio</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        <nav class="nav" id="mainNav">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="center">
-        <button id="clickMe" type="button">Click Me</button>
-      </section>
-
-      <form id="myForm">
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="e.g. Aisha">
-        <button type="submit">Submit</button>
-      </form>
-
-      <section class="dropdown">
-        <button id="dropdownBtn" type="button">Toggle Options</button>
-        <div id="dropdownContent" class="dropdown-content" aria-hidden="true">
-          <p>View profile</p>
-          <p>Account settings</p>
-          <p>Sign out</p>
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Responsive Design Practice Project</p>
+            <h1>Web pages that feel natural on every screen size</h1>
+            <p>
+              This sample project focuses on clean layout structure with Flexbox and Grid,
+              plus a few interactive touches that make the interface feel alive.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#work">Explore Work</a>
+              <a class="btn btn-light" href="#contact">Start a Project</a>
+            </div>
+            <div class="stats" id="stats">
+              <div class="stat-item">
+                <h3 data-target="24">0</h3>
+                <p>Projects launched</p>
+              </div>
+              <div class="stat-item">
+                <h3 data-target="18">0</h3>
+                <p>Active clients</p>
+              </div>
+              <div class="stat-item">
+                <h3 data-target="96">0</h3>
+                <p>Client retention %</p>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <h2>What this page demonstrates</h2>
+            <ul>
+              <li>Flexbox for header, cards, and section alignment</li>
+              <li>Grid for the portfolio layout and content blocks</li>
+              <li>Responsive behavior for desktop, tablet, and mobile</li>
+              <li>JavaScript-driven filters, menu toggle, and counters</li>
+            </ul>
+          </aside>
         </div>
       </section>
 
-      <section class="center">
-        <button id="openModal" type="button">Open Modal</button>
+      <section class="services" id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="service-row">
+            <article class="service-card">
+              <h3>Landing Pages</h3>
+              <p>Fast and focused pages built to highlight one clear action and improve conversions.</p>
+            </article>
+            <article class="service-card">
+              <h3>Portfolio Sites</h3>
+              <p>Clean personal or company portfolios with bold visuals and easy navigation.</p>
+            </article>
+            <article class="service-card">
+              <h3>UI Refresh</h3>
+              <p>Modern styling updates for older sites while keeping existing content and structure.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="container">
+          <div class="section-head">
+            <h2>Selected Work</h2>
+            <div class="filters" id="filters">
+              <button class="filter-btn active" data-filter="all" type="button">All</button>
+              <button class="filter-btn" data-filter="web" type="button">Web</button>
+              <button class="filter-btn" data-filter="branding" type="button">Branding</button>
+              <button class="filter-btn" data-filter="product" type="button">Product</button>
+            </div>
+          </div>
+
+          <div class="work-grid" id="workGrid">
+            <article class="work-card" data-type="web">
+              <h3>Clinic Appointment Site</h3>
+              <p>Mobile-first layout with clear booking flow and speed-focused pages.</p>
+            </article>
+            <article class="work-card" data-type="product">
+              <h3>Task Planner Dashboard</h3>
+              <p>Simple planning interface with progress cards and responsive table blocks.</p>
+            </article>
+            <article class="work-card" data-type="branding">
+              <h3>Cafe Identity Website</h3>
+              <p>Warm visual style, updated typography, and local search-friendly structure.</p>
+            </article>
+            <article class="work-card" data-type="web">
+              <h3>Online Course Home</h3>
+              <p>Structured hero and pricing sections with better readability on small screens.</p>
+            </article>
+            <article class="work-card" data-type="product">
+              <h3>Team Resource Board</h3>
+              <p>Grid-based board for managing documents, deadlines, and announcements.</p>
+            </article>
+            <article class="work-card" data-type="branding">
+              <h3>Fitness Studio Revamp</h3>
+              <p>Bright content presentation with stronger calls-to-action and cleaner flow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="container process-grid">
+          <div>
+            <h2>How work gets done</h2>
+            <p>
+              Every project starts with a quick content plan, then moves into wireframe layout,
+              visual styling, and responsive testing. The goal is always the same: clear content,
+              smooth interaction, and reliable behavior.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step"><span>01</span><p>Content and goals</p></div>
+            <div class="step"><span>02</span><p>Layout with Flexbox and Grid</p></div>
+            <div class="step"><span>03</span><p>Interactive polish with JavaScript</p></div>
+            <div class="step"><span>04</span><p>Responsive checks and refinements</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-wrap">
+          <div>
+            <h2>Let us build something useful</h2>
+            <p>Share your idea and get a quick response with a practical first plan.</p>
+          </div>
+          <form id="contactForm" novalidate>
+            <input type="text" id="fullName" placeholder="Your name">
+            <input type="email" id="email" placeholder="Your email">
+            <button type="submit" class="btn">Send</button>
+            <p id="formMessage"></p>
+          </form>
+        </div>
       </section>
     </main>
 
-    <div id="modal" aria-hidden="true">
-      <div id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <h2 id="modalTitle">Modal Popup</h2>
-        <p>This is a modal popup example.</p>
-        <button id="closeModal" type="button">Close</button>
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Built for Codveda Internship - Level 2 Task 1</p>
+        <p>Responsive Web Design with Flexbox and Grid</p>
       </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
