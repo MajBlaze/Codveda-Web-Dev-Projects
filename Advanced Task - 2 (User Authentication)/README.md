@@ -1,4 +1,4 @@
-# Advanced Task-2: Auth + Task Dashboard
+# Advanced Task - 2: Auth + Task Dashboard
 
 This is a simple full-stack app where users can sign up, log in, and manage their own tasks.
 
@@ -21,7 +21,7 @@ It was built as a clean internship project with practical structure, readable co
 ## Project Structure
 
 ```text
-Advanced Task-2/
+Advanced Task - 2 (User Authentication)/
   backend/
     src/
       config/

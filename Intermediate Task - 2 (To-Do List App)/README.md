@@ -25,7 +25,7 @@ I wanted to create something simple, clean, and actually useful while improving 
 ## 📂 Project Structure
 
 ```text
-To-Do list using Html , Css & JS/
+Intermediate Task - 2 (To-Do List App)/
 ├── index.html
 ├── style.css
 ├── script.js

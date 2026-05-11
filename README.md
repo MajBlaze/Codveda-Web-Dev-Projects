@@ -24,14 +24,14 @@ I made these projects level by level based on the official task list PDF and use
 
 | Level | Task | Folder |
 |---|---|---|
-| Level 1 | Task 1 - Static Website | `Task-1 Static Website/` |
-| Level 1 | Task 2 - Portfolio | `Task-2 Portfolio/` |
-| Level 1 | Task 3 - JavaScript Interactivity | `Task-3 JS interactivity/` |
-| Level 2 | Task 1 - Responsive Design | `Intermediate Task-1/` |
-| Level 2 | Intermediate Task - 2 (To-Do App with Local Storage) | `Intermediate Task - 2/` |
-| Level 2 | Task 3 - React/Vue Basics | `Intermediate Task - 3/` |
-| Level 3 | Task 1 - Full-Stack CRUD App | `Advanced Task-1/` |
-| Level 3 | Task 2 - Authentication System | `Advanced Task-2/` |
+| Level 1 | Basic Task - 1 (Static/Bakery Website) | `Basic Task - 1 (Bakery Website)/` |
+| Level 1 | Basic Task - 2 (Portfolio) | `Basic Task - 2 (Portfolio)/` |
+| Level 1 | Basic Task - 3 (JavaScript Interactivity) | `Basic Task - 3 (JavaScript Interactivity)/` |
+| Level 2 | Intermediate Task - 1 (Responsive Web Design) | `Intermediate Task - 1 (Responsive Web Design)/` |
+| Level 2 | Intermediate Task - 2 (To-Do App with Local Storage) | `Intermediate Task - 2 (To-Do List App)/` |
+| Level 2 | Intermediate Task - 3 (React/Vue Basics) | `Intermediate Task - 3 (React Calculator)/` |
+| Level 3 | Advanced Task - 1 (Full-Stack CRUD App) | `Advanced Task - 1 (Full-Stack CRUD)/` |
+| Level 3 | Advanced Task - 2 (Authentication System) | `Advanced Task - 2 (User Authentication)/` |
 
 ## Tech Stack Used
 

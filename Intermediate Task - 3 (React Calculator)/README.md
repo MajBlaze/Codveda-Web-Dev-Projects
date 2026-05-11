@@ -31,7 +31,7 @@ Screen value, first number, selected operator, waiting flag, history list
 
 ## Run project
 
-1. Open terminal in this folder: `Intermediate Task - 3`
+1. Open terminal in this folder: `Intermediate Task - 3 (React Calculator)`
 2. Run `npm install`
 3. Run `npm start`
 4. Open `http://localhost:3000`
