@@ -1,0 +1,17 @@
+{
+  "name": "advanced-task-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth + Task Dashboard for Codveda Advanced Task 2",
+  "scripts": {
+    "predev": "kill-port 5000 5173 5174",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install:backend": "npm install --prefix backend",
+    "install:frontend": "npm install --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "kill-port": "^2.0.1"
+  }
+}
